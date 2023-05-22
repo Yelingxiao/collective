@@ -8,21 +8,41 @@
   <title>demo</title>
 </head>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);;
-}
+  .content {
+    display: flex;
+    height: 100px;
+  }
+
+  .left {
+    width: 200px;
+    background-color: aqua;
+  }
+
+  .right {
+    width: 200px;
+    background-color: aquamarine;
+  }
+
+  .center {
+    flex: 1;
+    background-color: black;
+  }
+
+  .son {
+    width: 1222px;
+    background-color: beige;
+  }
 </style>
+
 <body>
-    <div id="app">
-      <div class="dot"></div>
+  <div id="app">
+    <div class="content">
+      <div class="left"></div>
+      <div class="center">
+        <div class="son"></div>
+      </div>
+      <div class="right"></div>
     </div>
-    <audio id="song" src="https://qiniu-image.qtshe.com/scholar.mp3"></audio>
+  </div>
 </body>
 </style>
